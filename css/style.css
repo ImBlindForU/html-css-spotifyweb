@@ -1,0 +1,68 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* variabile */
+
+:root{
+    /* colori */
+    --player-col:#282828;
+    --upbar-col:#080B12;
+    --main-col:#080B12;
+    --white-col:white;
+    --black-col:black;
+}
+/* common */
+.contenitore{
+    display: flex;
+    height: 90vh;
+
+
+    background-color: lightblue;
+}
+
+/* playersection */
+
+.player{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+
+
+    /* debug */
+
+    background-color: yellow;
+}
+
+
+/* sidebar */
+
+.sidebar{
+    width: 300px;
+    height: 90vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* debug */
+
+    background-color: red;
+}
+
+/* central */
+
+.central{
+    width: calc(100% - 300px);
+    margin-left: 300px;
+
+
+    /* debug */
+    background-color: lightcoral;
+}
