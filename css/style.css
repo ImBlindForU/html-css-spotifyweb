@@ -17,6 +17,8 @@
     --white-col:white;
     --black-col:black;
     --subtitle-color:#7B7D82;
+    --plus-col:#A3A3A3;
+    --font:#777A7F;
 }
 
 img{
@@ -25,6 +27,14 @@ img{
 
 html{
     font-family: 'Montserrat', sans-serif;
+}
+
+.font-grey{
+    color:var(--font) ;
+    font-weight: 400;
+}
+i{
+    color: var(--white-col);
 }
 /* common */
 .contenitore{
@@ -61,12 +71,10 @@ ul li{
     justify-content: space-between;
     /* debug */
 
-    background-color: yellow;
+    background-color:var(--player-col);
 }
 
 .player-col{
-    background-color: lightcoral;
-    border: 1px solid black;
     display: flex;
     align-items: center;
 }
@@ -100,17 +108,29 @@ ul li{
 
 .play i{
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 /* bottom */
-.play hr{
+.player-col hr{
     display: inline-block;
+    border: 2px solid var(--subtitle-color);
+    width: 20vh;
+    margin-left: 0;
 }
 .songbar{
     margin: 1rem; 
 }
 
+.songbar hr:first-child{
+    width: 7vh;
+    margin-right: -1rem;
+    border: 2px solid var(--white-col);
+}
 
+/* rightbars */
+.icons-right i{
+    padding: 0.5rem;
+}
 /* sidebar */
 
 .sidebar{
@@ -126,6 +146,20 @@ ul li{
     color: var(--white-col);
     background-color: var(--black-col);
 
+}
+.logo{
+    width: 80%;
+    margin: 0 auto;
+}
+.sidebar h2{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.plus{
+    color: var(--black-col);
+    background-color:var(--plus-col) ;
+    padding: 1rem;
+    margin-right: 0.5rem;
 }
 .container-sidebar{
     padding: 1rem;
@@ -147,6 +181,19 @@ ul li{
 .icon-sidebar{
     display: inline-block;
     width: 10%;
+    
+  
+}
+
+.crc{
+    border-radius: 50%;
+    background-color: var(--plus-col);
+}
+
+.sidebar ul li{
+    padding-top: 0.8rem;
+    font-weight: 600;
+    color: var(--font);
 }
 /* central */
 
@@ -201,14 +248,19 @@ ul li{
 /* interno del main contenitore */
 
 .filtra{
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     margin-bottom: 2.5rem;
-    padding-top: 2REM;
+    padding-top: 2rem;
 }
 
+.filtra ul li{
+    display: inline-block;
+    font-weight: 600;
+    color: var(--font);
+}
 .song-container{
     display: flex;
 }
@@ -236,4 +288,36 @@ ul li{
 .song h4{
     padding-top: 0.5rem;
     color: var(--subtitle-color);
+}
+
+
+/* mediaquery */
+
+@media screen and (max-width:1100px){
+    .filtra{
+        width: 90%;
+        
+    } 
+    .filtra h3{
+        width: calc(100% / 6 );
+    }
+    .song-container{
+        flex-wrap: wrap;
+    }
+    .song{
+        width: calc(100% / 4 - 2rem);
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    .song{
+        width: calc(100% / 2 - 4rem);
+    }
+}
+
+@media screen and (max-width:600px){
+    .song{
+        width: calc(100% / 2 - 2rem);
+    }
 }
