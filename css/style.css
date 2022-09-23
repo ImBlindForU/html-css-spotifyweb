@@ -85,9 +85,15 @@ ul li{
 }
 .icons-player-left{
     padding-left: 2rem;
+    
 }
 .separare i{
     padding-right: 1rem;
+    color: var(--font);
+}
+
+.separare i:hover{
+    color: var(--white-col);
 }
 .left-image{
     width: 5vh;
@@ -105,6 +111,8 @@ ul li{
     color: var(--subtitle-color);
 }
 
+
+
 /* central bar */
 /* top */
 .play{
@@ -116,6 +124,12 @@ ul li{
 .play i{
     padding: 1rem;
     font-size: 1.5rem;
+}
+.dimensione{
+    transition: all .2s ease-in-out;
+}
+.dimensione:hover{
+    transform: scale(1.2);
 }
 /* bottom */
 .player-col hr{
@@ -132,9 +146,19 @@ ul li{
     color: var(--white-col);
 }
 input[type="range" i]{
+    appearance:auto;
+    cursor: var(--borderbott-green);
     width: 20vw;
-
+    height: 1vh;
+    border-radius: 3rem;
+    cursor: auto;
 }
+input[type="range" i]::-webkit-slider-runnable-track{
+    background-color: var(--white-col);
+    border-radius: 3rem;
+    width: 50%;
+}
+
 
 .right input[type="range" i]{
     width: 15vw;
@@ -194,6 +218,7 @@ input[type="range" i]{
     display: flex;
     flex-direction: column;
     display: inline-block;
+    padding-bottom: 2.5rem;
 }
 
 .installa{
@@ -220,6 +245,18 @@ input[type="range" i]{
     padding-top: 0.8rem;
     font-weight: 600;
     color: var(--font);
+}
+.text-sidebar ul li a{
+    text-decoration: none;
+    color: var(--font);
+}
+/* hover */
+.text p:hover{
+    text-decoration: underline;
+}
+.sidebar ul li:hover{
+    color: var(--white-col);
+    border-left: 1px solid var(--borderbott-green);
 }
 /* central */
 
@@ -293,6 +330,7 @@ input[type="range" i]{
 
 .filtra ul li:hover{
     border-bottom: 1px solid var(--borderbott-green);
+    color: var(--white-col);
 }
 .song-container{
     display: flex;
@@ -304,6 +342,25 @@ input[type="range" i]{
     margin-top: 1rem;
     margin-right: 1rem;
    
+}
+.play-hover{
+    position: relative;
+}
+.play-hover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
+    font-size: 3rem;
+    opacity: 0;
+}
+
+.play-hover i:hover{
+    opacity: 1;
+}
+
+.play-hover img:hover{
+    opacity: 0.5;
 }
 
 .circle{
@@ -338,14 +395,20 @@ input[type="range" i]{
         flex-wrap: wrap;
     }
     .song{
-        width: calc(100% / 4 - 2rem);
+        width: calc(100% / 4 - 1rem);
     }
     
 }
 
 @media screen and (max-width:700px){
     .song{
-        width: calc(100% / 2 - 4rem);
+        width: calc(100% / 2 - 2rem);
+    }
+    .icons-player-left{
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        
     }
 }
 
