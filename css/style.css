@@ -355,21 +355,18 @@ input[type="range" i]::-webkit-slider-runnable-track{
     opacity: 0;
 }
 
-.play-hover:hover{
-    opacity: 0.5;
-    display: block;
-}
 
+.play-hover:hover img{ 
+    opacity: 0.5;
+ } 
 
  
-.play-hover:hover img { 
-    opacity: 0.5rem;
- } 
 
- .play-hover:hover i { 
-    display: block;
+.play-hover:hover i{ 
     opacity: 1;
- } 
+} 
+
+
 
 
 
