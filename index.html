@@ -27,8 +27,9 @@
                        <img class="left-image" src="img/sinister.jpeg" alt="">
                     </div>
                     
-                    <div class="text"><h2>Sinister</h2>
-                    <p>Brano Nome</p>
+                    <div class="text">
+                        <h2>Sinister</h2>
+                        <p>Brano Nome</p>
                     </div>
                     <div class="icons-player-left">
                         <i class="fa-regular fa-heart"></i>
@@ -46,8 +47,7 @@
                     <div class="play">
                         <div class="time">0:25</div>
                         <div class="songbar">
-                            <hr>
-                            <hr>
+                             <input type="range" min="0" max="500">
                         </div>
                       
                         <div class="time">4:35</div>
@@ -59,11 +59,9 @@
                         <i class="fa-solid fa-display"></i>
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
-                   
-                    <div class="songbar">
-                        <hr>
-                        <hr>
-                    </div>
+                    <div class="songbar right">
+                        <input type="range" min="0" max="500">
+                   </div>
                 </div>
             </div>
         </section>
@@ -75,25 +73,28 @@
                 <div class="sidebar">
                     <div class="container-sidebar top font">
                         <div class="logo">
-                            <img src="img/logo.svg" alt="">
+                            <img class="primo-logo" src="img/logo.svg" alt="">
+                            <img class="secondo-logo" src="img/logo-small.svg" alt="">
                         </div>
                         <ul>
-                            <li><img class="icon-sidebar" src="img/home.svg" alt=""> Home</li>
-                            <li><img class="icon-sidebar" src="img/search.svg" alt=""> Search</li>
-                            <li><img class="icon-sidebar" src="img/libreria.svg" alt=""> Libreria</li>
+                            <li><img class="icon-sidebar" src="img/home.svg" alt="">
+                                <span class="text-sidebar">Home</span> </li>
+                            <li><img class="icon-sidebar" src="img/search.svg" alt="">  <span class="text-sidebar">Search</span></li>
+                            <li><img class="icon-sidebar" src="img/libreria.svg" alt="">  <span class="text-sidebar">Libreria</span></li>
                         </ul>
 
-                        <h2>PLAYLIST</h2>
+                        <h2 class="text-sidebar">PLAYLIST</h2>
                         <ul>
-                            <li>
-                                <i class="fa-solid fa-plus plus"></i> Crea Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
+                            <li class="text-sidebar">
+                                <i class="fa-solid fa-plus plus"></i><span >Crea Playlist</span></li>
+                            <li><span class="text-sidebar">Nome Playlist</span></li>
+                            <li><span class="text-sidebar">Nome Playlist</span></li>
+                            <li><span class="text-sidebar">Nome Playlist</span></li>
+                            <li><span class="text-sidebar">Nome Playlist</span></li>
+                            <li><span class="text-sidebar">Nome Playlist</span></li>
+                            <li><span class="text-sidebar">Nome Playlist</span></li>
+                            <li><span class="text-sidebar">Nome Playlist</span></li>
+                            
 
                         </ul>
                     </div>
@@ -101,12 +102,12 @@
                     <div class="container-sidebar bottom">
                         <div class="installa">
                             <img class="icon-sidebar" src="img/download.svg" alt="">
-                            <div class="sidebar-bottom-text">Installa app</div>
+                            <div class="sidebar-bottom-text text-sidebar">Installa app</div>
                         </div>
                         <hr>
                         <div class="installa">
                             <img class="icon-sidebar crc" src="img/profile.svg" alt="">
-                            <div class="sidebar-bottom-text">Jhon Doe</div>
+                            <div class="sidebar-bottom-text text-sidebar">Jhon Doe</div>
                         </div>
                      
                     </div>

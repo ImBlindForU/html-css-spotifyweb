@@ -41,8 +41,7 @@ i{
     display: flex;
     height: 90vh;
 
-    /* debug */
-    background-color: lightblue;
+   background-color: var(--main-col);
 }
 
 hr{
@@ -62,7 +61,7 @@ ul li{
 
 .player{
     width: 100vw;
-    height: 10vh;
+    height: 150px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -97,6 +96,13 @@ ul li{
     padding-left: 2rem;
 }
 
+.text h2{
+    color: var(--white-col);
+}
+
+.text p{
+    color: var(--subtitle-color);
+}
 
 /* central bar */
 /* top */
@@ -118,8 +124,22 @@ ul li{
     margin-left: 0;
 }
 .songbar{
+    
     margin: 1rem; 
 }
+.time{
+    color: var(--white-col);
+}
+input[type="range" i]{
+    width: 20vw;
+
+}
+
+.right input[type="range" i]{
+    width: 15vw;
+}
+
+
 
 .songbar hr:first-child{
     width: 7vh;
@@ -147,9 +167,14 @@ ul li{
     background-color: var(--black-col);
 
 }
-.logo{
+.primo-logo{
     width: 80%;
     margin: 0 auto;
+}
+
+.secondo-logo{
+   
+    display: none;
 }
 .sidebar h2{
     margin-top: 2rem;
@@ -180,7 +205,7 @@ ul li{
 }
 .icon-sidebar{
     display: inline-block;
-    width: 10%;
+    width: 2rem;
     
   
 }
@@ -255,11 +280,14 @@ ul li{
     margin-bottom: 2.5rem;
     padding-top: 2rem;
 }
-
+.filtra ul{
+    text-align: center;
+}
 .filtra ul li{
     display: inline-block;
     font-weight: 600;
     color: var(--font);
+    
 }
 .song-container{
     display: flex;
@@ -319,5 +347,33 @@ ul li{
 @media screen and (max-width:600px){
     .song{
         width: calc(100% / 2 - 2rem);
+    }
+    .sidebar{
+        width: 80px;
+    }
+    .primo-logo{
+        display: none;
+    }
+
+    .secondo-logo{
+        display: block;
+        margin: 0.6rem;
+        width: 2rem;
+    }
+    .text-sidebar{
+        display: none;
+    }
+    .container-sidebar hr{
+        display: none;
+    }
+    .container-sidebar .installa{
+        padding-bottom: 1rem;
+    }
+    .central{
+        width: calc(100% - 80px );
+        margin-left: 80px;
+    }
+    .upgrade-bar{
+        width: calc(100% - 80px);
     }
 }
