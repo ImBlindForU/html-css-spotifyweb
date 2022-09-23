@@ -355,13 +355,23 @@ input[type="range" i]::-webkit-slider-runnable-track{
     opacity: 0;
 }
 
-.play-hover i:hover{
-    opacity: 1;
+.play-hover:hover{
+    opacity: 0.5;
+    display: block;
 }
 
-.play-hover img:hover{
-    opacity: 0.5;
-}
+
+ 
+.play-hover:hover img { 
+    opacity: 0.5rem;
+ } 
+
+ .play-hover:hover i { 
+    display: block;
+    opacity: 1;
+ } 
+
+
 
 .circle{
     border-radius: 50%;
